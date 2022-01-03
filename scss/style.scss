@@ -127,7 +127,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+@import "_header";
 body {
 	font-family: "Poppins", sans-serif;
 	font-family: "Roboto", sans-serif;
@@ -142,8 +142,242 @@ body {
 		max-width: 1155px;
 		margin: 0 auto;
 	}
+	.center1 {
+		width: 100%;
+		max-width: 1321px;
+		margin: 0 auto;
+	}
+
+	.develop {
+		display: flex;
+		justify-content: space-between;
+		height: 496px;
+		margin-bottom: 110px;
+		.develop-left {
+			display: flex;
+			flex-direction: column;
+			margin-top: 47px;
+			flex-basis: 510px;
+			margin-left: 70px;
+			h1 {
+				font-family: Poppins;
+				font-weight: 600;
+				font-size: 54px;
+				line-height: 81px;
+				color: #021206;
+				margin-bottom: 25px;
+				span {
+				}
+			}
+			.one {
+				// color: linear-gradient(#3effc0 100%, #18ca90 100%);
+				color: #3effc0;
+			}
+			p {
+				font-family: Poppins;
+				font-size: 21px;
+				line-height: 160%;
+				color: #021206;
+				opacity: 0.7;
+				margin-bottom: 30px;
+				.two {
+					font-weight: 500;
+				}
+			}
+			form {
+				margin-bottom: 35px;
+				input {
+					font-family: Poppins;
+					font-size: 18px;
+					line-height: 27px;
+					color: #021206;
+					opacity: 0.5;
+					width: 472px;
+					height: 65px;
+					background: #ffffff;
+					border-radius: 6px;
+					background-color: drop-shadow(-5px 5px 45px rgba(2, 18, 6, 0.15));
+					position: relative;
+					padding-left: 24px;
+				}
+				button {
+					font-family: Poppins;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 21px;
+					line-height: 31px;
+					color: #ffffff;
+					padding: 11px 33px 10px;
+					background-color: #f44545;
+					border: solid 1px #f44545;
+					border-radius: 6px;
+					position: absolute;
+					margin-left: -130px;
+					margin-top: 8px;
+					box-sizing: border-box;
+				}
+			}
+			.google-apple {
+				.google-left {
+					margin-right: 30px;
+				}
+			}
+		}
+		.develop-right {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-template-rows: auto auto auto auto;
+			flex-direction: 447px;
+
+			.laptop {
+				margin-top: -29px;
+				margin-left: -227px;
+			}
+			.phone {
+				margin-left: 77px;
+				margin-top: 185px;
+				z-index: 2;
+			}
+			.corp {
+				margin-left: 68px;
+				margin-top: -366px;
+				z-index: 3;
+			}
+			.eclipse-top {
+				margin-top: -624px;
+				margin-left: -207px;
+				z-index: -1;
+			}
+			.eclipse-small-top {
+				margin-top: 25px;
+				margin-left: -730px;
+			}
+			.eclipse-small-top2 {
+				margin-top: -503px;
+				margin-left: -730px;
+			}
+			.eclipse-small-top3 {
+				margin-top: -503px;
+				margin-left: -97px;
+			}
+			.eclipse-bottom {
+				margin-right: -721px;
+				margin-left: 624px;
+				margin-top: -224px;
+				z-index: -1;
+			}
+			.eclipse-small-bottom {
+				margin-top: -83px;
+				margin-left: -97px;
+			}
+			.eclipse-small-bottom1 {
+				margin-top: 0;
+				margin-left: 0;
+				opacity: 0;
+			}
+			.eclipse-small-bottom2 {
+				margin-top: -108px;
+				margin-left: 564px;
+			}
+			.eclipse-small-bottom3 {
+				margin-top: -95px;
+				margin-left: -97px;
+			}
+		}
+	}
+
+	.google-bg {
+		background-color: #8ee6c9;
+		// opacity: 0.1;
+		width: auto;
+		margin-bottom: 110px;
+
+		.center3 {
+			width: 100%;
+			max-width: 1146px;
+			margin: 0 auto;
+		}
+		.google {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 163px;
+		}
+	}
+}
+@media screen and (max-width: 1500px) {
+	.wrapper {
+		.develop {
+			flex-direction: column;
+			text-align: center;
+			padding-bottom: 420px;
+			.develop-left {
+				margin-bottom: 50px;
+				margin-left: 0px;
+			}
+			.develop-right {
+				align-self: center;
+				margin-bottom: 110px;
+			}
+		}
+	}
 }
 
-@import "_header";
+@media screen and (max-width: 1400px) {
+	.wrapper {
+		.center1 {
+			max-width: 95%;
+			width: auto;
+		}
+	}
+}
+@media screen and (max-width: 1200px) {
+	.wrapper {
+		.center {
+			width: auto;
+			max-width: 95%;
+		}
+		.google-bg {
+			.center3 {
+				max-width: 95%;
+				width: auto;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1002px) {
+	.wrapper {
+		.develop {
+			padding-bottom: 470px;
+		}
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.wrapper {
+		.google-bg {
+			.center3 {
+			}
+			.google {
+				flex-wrap: wrap;
+				justify-content: center;
+				height: auto;
+				li {
+					padding-right: 20px;
+					padding-bottom: 20px;
+					padding-top: 20px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 650px) {
+	.wrapper {
+		.develop {
+			.develop-left {
+			}
+		}
+	}
+}
 
 @import "_footer";
