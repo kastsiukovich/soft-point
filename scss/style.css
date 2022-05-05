@@ -519,7 +519,6 @@ body {
 }
 
 .wrapper .software .software-left .icon h3 {
-  width: 143%;
   height: 32px;
   font-family: "Poppins";
   font-style: normal;
@@ -860,6 +859,36 @@ body {
   }
 }
 
+@media screen and (max-width: 1050px) {
+  .wrapper .software {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .software .software-left {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+  }
+  .wrapper .software .software-left .icon {
+    margin-right: 5px;
+  }
+  .wrapper .software .software-right {
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 1002px) {
   .wrapper .develop {
     padding-bottom: 470px;
@@ -891,6 +920,58 @@ body {
   }
   .wrapper .cards .card-two {
     margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .center {
+    max-width: 95%;
+  }
+  .wrapper .software .software-left {
+    margin-left: 0;
+  }
+  .wrapper .software .software-left .icon {
+    text-align: center;
+  }
+  .wrapper .software .software-left .icon .icon-text {
+    width: auto;
+  }
+  .wrapper .software .software-left .icon .img {
+    margin: 0 auto;
+  }
+  .wrapper .software .software-right {
+    margin-bottom: 20px;
+  }
+  .wrapper .software .software-right .btn-soft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper .software .software-right .btn-soft .btn1 {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  .wrapper section .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper section .cards .card .buy-plan {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wrapper section .cards .card .info-card {
+    width: 100%;
   }
 }
 

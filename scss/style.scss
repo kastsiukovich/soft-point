@@ -326,7 +326,7 @@ $color_black:  #021206;
 				}
 				
 				h3{
-					width: 143%;
+					// width: 143%;
 					height: 32px;
 					font-family: "Poppins";
 					font-style: normal;
@@ -351,6 +351,7 @@ $color_black:  #021206;
 			width: 548px;
 			height: 405px;
 			margin-top: 105px;
+		
 			.title{
 				font-family: "Poppins";
 				font-weight: 600;
@@ -629,6 +630,28 @@ $color_black:  #021206;
 			}
 		}
 	}
+@media screen and (max-width: 1050px){
+	.wrapper{
+		.software{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.software-left{
+				justify-content: center;
+				width: auto;
+				.icon{
+					margin-right: 5px;
+				}
+			}
+			.software-right{
+				text-align: center;
+				width: auto;
+				height: auto;
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
 	
 @media screen and (max-width: 1002px) {
 	.wrapper {
@@ -680,5 +703,67 @@ $color_black:  #021206;
 		}
 	}
 }
+@media screen and (max-width: 600px){
+	.center{
+		max-width: 95%;
+	}
+	.wrapper{
+		.software{
+			.software-left{
+				margin-left: 0;
+				.icon{
+					text-align: center;
+					.icon-text{
+						width: auto;
+					}
+					.img{
+						margin: 0 auto;
+					}
+				}
+			}
+			.software-right{
+				margin-bottom: 20px;
+				.btn-soft{
+					display: flex;
+					flex-direction: column;
+					.btn1{
+						margin-bottom: 20px;
+						margin-right: 0px;
+					}
+				}
+			}
+		}
+		section{
+			.cards{
+				display: flex;
+				flex-direction: column;
+				.card{
+					.info-card{
+						// width: auto;
+					}
+					.buy-plan{
+						width: 95%;
+
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 400px){
+	.wrapper{
+		section{
+			.cards{
+				.card{
+					.info-card{
+						width: 100%;
+
+					}
+				}
+			}
+		}
+	}
+}
+
 
 @import "_footer";
