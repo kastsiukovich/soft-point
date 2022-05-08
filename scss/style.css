@@ -848,6 +848,112 @@ body {
           box-shadow: 0px 20px 100px rgba(2, 18, 6, 0.15);
 }
 
+.wrapper .best {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.wrapper .best .best-pricing {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 68px;
+  color: #021206;
+  margin-bottom: 20px;
+}
+
+.wrapper .best p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  color: #021206;
+  opacity: 0.7;
+  width: 754px;
+  margin-bottom: 37px;
+}
+
+.wrapper .best .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 17px;
+  /* The switch - the box around the slider */
+  /* Hide default HTML checkbox */
+  /* The slider */
+}
+
+.wrapper .best .radio .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.wrapper .best .radio .switch input {
+  display: none;
+}
+
+.wrapper .best .radio .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.wrapper .best .radio .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.wrapper .best .radio input:checked + .slider {
+  background-color: #2196F3;
+}
+
+.wrapper .best .radio input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+.wrapper .best .radio input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.wrapper .best .save-up {
+  margin-bottom: 37px;
+}
+
+.wrapper .best .price {
+  margin-bottom: 88px;
+}
+
 @media screen and (max-width: 1500px) {
   .wrapper .center-right {
     width: 100%;
