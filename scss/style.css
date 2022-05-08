@@ -612,7 +612,7 @@ body {
 }
 
 .wrapper .get-software {
-  background-color: #8EE6C9;
+  background-color: rgba(142, 230, 201, 0.1);
   margin-bottom: 117px;
 }
 
@@ -680,7 +680,7 @@ body {
 }
 
 .wrapper .google-bg {
-  background-color: #8ee6c9;
+  background-color: rgba(142, 230, 201, 0.1);
   width: auto;
   margin-bottom: 110px;
 }
@@ -932,9 +932,17 @@ body {
   .wrapper .cards .card-two {
     margin: 0 15px 15px 15px;
   }
-  .wrapper .get-software .center-right .get-software-right img {
-    width: 40%;
+  .wrapper .get-software .center-right {
+    width: 95%;
+  }
+  .wrapper .get-software .center-right .get-software-right {
+    width: 10%;
     height: auto;
+  }
+  .wrapper .get-software .center-right .get-software-right img {
+    top: 50px;
+    left: 0;
+    width: 500%;
   }
 }
 
@@ -979,6 +987,37 @@ body {
     width: auto;
     height: auto;
     margin-bottom: 50px;
+  }
+  .wrapper .get-software .center-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .get-software .center-right .get-software-left {
+    width: auto;
+    text-align: center;
+  }
+  .wrapper .get-software .center-right .get-software-left h4 {
+    padding-top: 40px;
+  }
+  .wrapper .get-software .center-right .get-software-left button {
+    margin-bottom: 40px;
+  }
+  .wrapper .get-software .center-right .get-software-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper .get-software .center-right .get-software-right img {
+    position: static;
+    width: 1000%;
   }
 }
 
@@ -1056,6 +1095,9 @@ body {
   .wrapper .software .software-right .btn-soft .btn1 {
     margin-bottom: 20px;
     margin-right: 0px;
+  }
+  .wrapper .get-software .center-right .get-software-left button {
+    width: 100%;
   }
   .wrapper section .cards {
     display: -webkit-box;

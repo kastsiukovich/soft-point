@@ -422,8 +422,7 @@ $color_red: #F44545;
 		}
 	}
 	.get-software{
-		background-color: #8EE6C9;
-		// opacity: 0.1;
+		background-color: rgba(142, 230, 201, 0.1);
 		margin-bottom: 117px;
 		.center-right{
 			display: flex;
@@ -466,8 +465,7 @@ $color_red: #F44545;
 
 
 	.google-bg {
-		background-color: #8ee6c9;
-		// opacity: 0.1;
+		background-color: rgba(142, 230, 201, 0.1);
 		width: auto;
 		margin-bottom: 110px;
 
@@ -698,10 +696,14 @@ $color_red: #F44545;
 		}
 		.get-software{
 			.center-right{
+				width: 95%;
 				.get-software-right{
+					width:10%;
+					height: auto;
 					img{
-						width:40%;
-						height: auto;
+						top: 50px;
+						left: 0;
+						width: 500%;
 					}
 				}
 			}
@@ -739,6 +741,31 @@ $color_red: #F44545;
 				width: auto;
 				height: auto;
 				margin-bottom: 50px;
+			}
+		}
+		.get-software{
+			.center-right{
+				flex-direction: column;
+				align-items: center;
+				.get-software-left{
+					width: auto;
+					text-align: center;
+					h4{
+						padding-top: 40px;
+					}
+					button{
+						margin-bottom: 40px;
+					}
+				}
+				.get-software-right{
+					display: flex;
+    				justify-content: center;
+					// width: 100%;
+					img{
+						position: static;
+						width: 1000%;
+					}
+				}
 			}
 		}
 	}
@@ -833,6 +860,16 @@ $color_red: #F44545;
 					.btn1{
 						margin-bottom: 20px;
 						margin-right: 0px;
+					}
+				}
+			}
+		
+		}
+		.get-software{
+			.center-right{
+				.get-software-left{
+					button{
+					width: 100%;
 					}
 				}
 			}
