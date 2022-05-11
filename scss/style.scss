@@ -188,8 +188,8 @@ $color_red: #F44545;
 				line-height: 81px;
 				color: $color_black;
 				margin-bottom: 25px;
-				span {
-				}
+				// span {
+				// }
 			}
 			.one {
 				// color: linear-gradient(#3effc0 100%, #18ca90 100%);
@@ -583,20 +583,20 @@ $color_red: #F44545;
 				background-color: white;
 			}
 		}
-		.card-one {
-			.info-card {
-				.info {
-					.one-p {
-						// text-decoration: none;
-					}
-				}
-			}
-		}
+		// .card-one {
+		// 	.info-card {
+		// 		.info {
+		// 			.one-p {
+		// 				// text-decoration: none;
+		// 			}
+		// 		}
+		// 	}
+		// }
 		.card-two {
 			box-shadow: 0px 20px 100px rgba(2, 18, 6, 0.15);
 		}
-		.card-three {
-		}
+		// .card-three {
+		// }
 	}
 	.best{
 		display: flex;
@@ -615,19 +615,30 @@ $color_red: #F44545;
 		}
 		.radio{
 			display: flex;
-			justify-content: center;
+			justify-content: space-between;
+			align-items: center;
+			width: 267px;
 			margin-bottom: 17px;
+			h5{
+				@include font("Poppins", normal, 400, 20px, 80%, $color_black);
+				color: #4E5951;
+			}
 			/* The switch - the box around the slider */
 			.switch {
 				position: relative;
 				display: inline-block;
-				width: 60px;
-				height: 34px;
+				// width: 60px;
+				// height: 34px;
+				width: 58px;
+				height: 29px;
 			}
-			
 			/* Hide default HTML checkbox */
-			.switch input {display:none;}
-			
+			.switch input {
+				display: flex;
+				justify-content: center;
+				align-self: center;
+				// display:none;
+			}
 			/* The slider */
 			.slider {
 				position: absolute;
@@ -636,40 +647,90 @@ $color_red: #F44545;
 				left: 0;
 				right: 0;
 				bottom: 0;
-				background-color: #ccc;
+				background-color: #43DDAA;
 				-webkit-transition: .4s;
 				transition: .4s;
+				border-radius: 6px;
 			}
 			.slider:before {
 				position: absolute;
 				content: "";
-				height: 26px;
-				width: 26px;
-				left: 4px;
-				bottom: 4px;
-				background-color: white;
+				height: 17px;
+				width: 16px;
+				right: 8px;
+				bottom: 6px;
+				background-color: $color_white;
+				border-radius: 3px;
 				-webkit-transition: .4s;
 				transition: .4s;
 			}
 			input:checked + .slider {
-				background-color: #2196F3;
+				background-color: #43DDAA;
 			}
 			input:focus + .slider {
-				box-shadow: 0 0 1px #2196F3;
+				box-shadow: 0 0 1px #43DDAA;
 			}
 			input:checked + .slider:before {
 				-webkit-transform: translateX(26px);
 				-ms-transform: translateX(26px);
-				transform: translateX(26px);
+				transform: translateX(-26px);
 			}
-
 		}
 		.save-up{
-			margin-bottom: 37px;
+			margin-bottom: 27px;
+			@include font("Poppins", normal, 600, 18px, 80%, $color_black);
+			opacity: 0.7;
+			img{
+				margin-left: 8px;
+			}
 		}
-		.price{
-			margin-bottom: 88px;
-		}
+		// .best-pricing{
+		// }
+		.slidecontainer {
+			width: 1146px; /* Ширина внешнего контейнера */
+		 }
+		 
+		 /* Сам ползунок */
+		 .slider {
+			-webkit-appearance: none;  /* Переопределение стилей CSS по умолчанию */
+			appearance: none;
+			width: 100%; /* Полная ширина */
+			height: 10px; /* Заданная высота */
+			background: linear-gradient(154.24deg, #85FED6 4.45%, #4EDAAC 83.73%);
+			outline: none; /* Удалить контур */
+			opacity: 0.7; /* Установите прозрачность (для эффектов наведения мыши при наведении курсора) */
+			-webkit-transition: .2s; /* 0.2 секундный переход при наведении курсора */
+			transition: opacity .2s;
+			box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+			background-blend-mode: luminosity;
+			border-radius: 10px;
+		 }
+		 
+		 /* Эффекты наведения курсора мыши */
+		 .slider:hover {
+			opacity: 1; /* Полностью отображается при наведении курсора мыши */
+		 }
+		 
+		 /*Ползунок обработчик (использовать -webkit- (Chrome, Opera, Safari, Edge) и -moz- (Firefox) чтобы переопределить внешний вид по умолчанию ) */
+		 .slider::-webkit-slider-thumb {
+			-webkit-appearance: none; /* Переопределить внешний вид по умолчанию */
+			appearance: none;
+			width: 20px; /* Установите определенную ширину обработчика ползунка */
+			height: 20px; /* Высота обработчика ползунка */
+			background: linear-gradient(154.24deg, #85FED6 4.45%, #4EDAAC 83.73%);
+			background-blend-mode: luminosity;
+			border-radius: 10px;
+			border: 3px solid #FFFFFF;
+			box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+			cursor: pointer; /* Курсор при наведении */
+		 }
+		 
+		//  .slider::-moz-range-thumb {
+		// 	width: 25px; /* Установите определенную ширину обработчика ползунка */
+		// 	height: 25px; /* Высота обработчика подзунка */
+		// 	background: #4CAF50; /* Зеленый фон */
+		// 	cursor: pointer; /* Курсор при наведении */
+		// }
 	}
 }
 @media screen and (max-width: 1500px) {
@@ -763,9 +824,9 @@ $color_red: #F44545;
 			.card-two {
 				margin: 0 15px 15px 15px;
 				// margin-bottom: 15px;
-				.buy-plan {
-					// flex-wrap: wrap;
-				}
+				// .buy-plan {
+				// 	// flex-wrap: wrap;
+				// }
 			}
 		}
 		.get-software{
@@ -856,8 +917,8 @@ $color_red: #F44545;
 @media screen and (max-width: 950px) {
 	.wrapper {
 		.google-bg {
-			.center3 {
-			}
+			// .center3 {
+			// }
 			.google {
 				flex-wrap: wrap;
 				justify-content: center;
@@ -955,9 +1016,9 @@ $color_red: #F44545;
 				padding-bottom: 25px;
 				.card{
 					height: auto;
-					.info-card{
-						// width: auto;
-					}
+					// .info-card{
+					// 	// width: auto;
+					// }
 					.buy-plan{
 						width: 95%;
 

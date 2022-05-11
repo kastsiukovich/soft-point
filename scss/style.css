@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -860,6 +861,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  /* Сам ползунок */
+  /* Эффекты наведения курсора мыши */
+  /*Ползунок обработчик (использовать -webkit- (Chrome, Opera, Safari, Edge) и -moz- (Firefox) чтобы переопределить внешний вид по умолчанию ) */
 }
 
 .wrapper .best .best-pricing {
@@ -888,24 +892,45 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 267px;
   margin-bottom: 17px;
   /* The switch - the box around the slider */
   /* Hide default HTML checkbox */
   /* The slider */
 }
 
+.wrapper .best .radio h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 80%;
+  color: #021206;
+  color: #4E5951;
+}
+
 .wrapper .best .radio .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 58px;
+  height: 29px;
 }
 
 .wrapper .best .radio .switch input {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .wrapper .best .radio .slider {
@@ -915,43 +940,104 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #43DDAA;
   -webkit-transition: .4s;
   transition: .4s;
+  border-radius: 6px;
 }
 
 .wrapper .best .radio .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
+  height: 17px;
+  width: 16px;
+  right: 8px;
+  bottom: 6px;
+  background-color: #ffffff;
+  border-radius: 3px;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 .wrapper .best .radio input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #43DDAA;
 }
 
 .wrapper .best .radio input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #2196F3;
-          box-shadow: 0 0 1px #2196F3;
+  -webkit-box-shadow: 0 0 1px #43DDAA;
+          box-shadow: 0 0 1px #43DDAA;
 }
 
 .wrapper .best .radio input:checked + .slider:before {
   -webkit-transform: translateX(26px);
-  transform: translateX(26px);
+  transform: translateX(-26px);
 }
 
 .wrapper .best .save-up {
-  margin-bottom: 37px;
+  margin-bottom: 27px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 80%;
+  color: #021206;
+  opacity: 0.7;
 }
 
-.wrapper .best .price {
-  margin-bottom: 88px;
+.wrapper .best .save-up img {
+  margin-left: 8px;
+}
+
+.wrapper .best .slidecontainer {
+  width: 1146px;
+  /* Ширина внешнего контейнера */
+}
+
+.wrapper .best .slider {
+  -webkit-appearance: none;
+  /* Переопределение стилей CSS по умолчанию */
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  /* Полная ширина */
+  height: 10px;
+  /* Заданная высота */
+  background: linear-gradient(154.24deg, #85FED6 4.45%, #4EDAAC 83.73%);
+  outline: none;
+  /* Удалить контур */
+  opacity: 0.7;
+  /* Установите прозрачность (для эффектов наведения мыши при наведении курсора) */
+  -webkit-transition: .2s;
+  /* 0.2 секундный переход при наведении курсора */
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  -webkit-box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+          box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+  background-blend-mode: luminosity;
+  border-radius: 10px;
+}
+
+.wrapper .best .slider:hover {
+  opacity: 1;
+  /* Полностью отображается при наведении курсора мыши */
+}
+
+.wrapper .best .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Переопределить внешний вид по умолчанию */
+  appearance: none;
+  width: 20px;
+  /* Установите определенную ширину обработчика ползунка */
+  height: 20px;
+  /* Высота обработчика ползунка */
+  background: linear-gradient(154.24deg, #85FED6 4.45%, #4EDAAC 83.73%);
+  background-blend-mode: luminosity;
+  border-radius: 10px;
+  border: 3px solid #FFFFFF;
+  -webkit-box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+          box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+  cursor: pointer;
+  /* Курсор при наведении */
 }
 
 @media screen and (max-width: 1500px) {
