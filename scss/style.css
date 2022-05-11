@@ -931,9 +931,11 @@ body {
           justify-content: center;
   -ms-flex-item-align: center;
       align-self: center;
+  display: none;
 }
 
 .wrapper .best .radio .slider {
+  height: 29px;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -991,6 +993,7 @@ body {
 .wrapper .best .slidecontainer {
   width: 1146px;
   /* Ширина внешнего контейнера */
+  margin-bottom: 89px;
 }
 
 .wrapper .best .slider {
@@ -1136,6 +1139,9 @@ body {
     left: 0;
     width: 500%;
   }
+  .wrapper .best .slidecontainer {
+    max-width: 95%;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -1232,6 +1238,9 @@ body {
     padding-right: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
+  }
+  .wrapper .best p {
+    max-width: 95%;
   }
 }
 

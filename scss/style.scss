@@ -637,10 +637,11 @@ $color_red: #F44545;
 				display: flex;
 				justify-content: center;
 				align-self: center;
-				// display:none;
+				display:none;
 			}
 			/* The slider */
 			.slider {
+				height: 29px;
 				position: absolute;
 				cursor: pointer;
 				top: 0;
@@ -688,6 +689,7 @@ $color_red: #F44545;
 		// }
 		.slidecontainer {
 			width: 1146px; /* Ширина внешнего контейнера */
+			margin-bottom: 89px;
 		 }
 		 
 		 /* Сам ползунок */
@@ -724,13 +726,6 @@ $color_red: #F44545;
 			box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
 			cursor: pointer; /* Курсор при наведении */
 		 }
-		 
-		//  .slider::-moz-range-thumb {
-		// 	width: 25px; /* Установите определенную ширину обработчика ползунка */
-		// 	height: 25px; /* Высота обработчика подзунка */
-		// 	background: #4CAF50; /* Зеленый фон */
-		// 	cursor: pointer; /* Курсор при наведении */
-		// }
 	}
 }
 @media screen and (max-width: 1500px) {
@@ -843,6 +838,11 @@ $color_red: #F44545;
 				}
 			}
 		}
+		.best{
+			.slidecontainer{
+				max-width: 95%;
+			}
+		}
 	}
 }
 @media screen and (max-width: 1150px){
@@ -928,6 +928,11 @@ $color_red: #F44545;
 					padding-bottom: 20px;
 					padding-top: 20px;
 				}
+			}
+		}
+		.best{
+			p{
+				max-width: 95%;
 			}
 		}
 	}
