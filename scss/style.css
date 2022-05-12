@@ -991,9 +991,50 @@ body {
 }
 
 .wrapper .best .slidecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 1146px;
   /* Ширина внешнего контейнера */
   margin-bottom: 89px;
+}
+
+.wrapper .best .slidecontainer .price {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 83px;
+  height: 36px;
+  background: #282323;
+  border-radius: 3px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 80%;
+  color: #ffffff;
+  margin-bottom: 23px;
+}
+
+.wrapper .best .slidecontainer .price span {
+  position: absolute;
+  top: 35px;
+  width: 15px;
+  height: 15px;
+  background: no-repeat url("../images/slidercontainer-price-bg.svg");
 }
 
 .wrapper .best .slider {
