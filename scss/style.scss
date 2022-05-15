@@ -132,10 +132,10 @@ body {
 	font-family: "Poppins", sans-serif;
 	font-family: "Roboto", sans-serif;
 }
-$color_black:  #021206;
+$color_black: #021206;
 $color_white: #ffffff;
-$color_red: #F44545;
-@mixin font($ff, $fs, $fw, $fz, $lh, $c){
+$color_red: #f44545;
+@mixin font($ff, $fs, $fw, $fz, $lh, $c) {
 	font-family: $ff;
 	font-style: $fs;
 	font-weight: $fw;
@@ -158,17 +158,16 @@ $color_red: #F44545;
 		max-width: 1321px;
 		margin: 0 auto;
 	}
-	.center3{
+	.center3 {
 		width: 100%;
 		max-width: 1216px;
 		margin: 0px 227px 0px 157px;
 	}
-	.center-right{
+	.center-right {
 		width: 100%;
 		max-width: 1240px;
 		margin: 0px 122px 0px 228px;
 	}
-
 
 	.develop {
 		display: flex;
@@ -303,54 +302,52 @@ $color_red: #F44545;
 			.eclipse-small-bottom3 {
 				margin-top: -95px;
 				margin-left: -97px;
-			
 			}
 		}
 	}
-	.software{
+	.software {
 		display: flex;
 
 		margin-bottom: 110px;
-		.software-left{
+		.software-left {
 			display: flex;
 			flex-wrap: wrap;
 			margin-right: 74px;
 			width: 612px;
-			.icon{
-				background: #FFFFFF;
+			.icon {
+				background: #ffffff;
 				box-shadow: 0px 15px 65px rgba(65, 77, 68, 0.15);
 				border-radius: 10px;
 
 				margin-bottom: 32px;
 				margin-right: 30px;
 				padding: 24px;
-				.img{
+				.img {
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					width: 75px;
 					height: 75px;
-					background: 75px/75px linear-gradient(141.58deg, #FF9A9A 3.63%, #F14C4C 91.45%);
-						mix-blend-mode: normal;
-						box-shadow: 1px 5px 30px rgba(215, 21, 21, 0.5);
-						border-radius: 10px;
-					img{
+					background: 75px/75px linear-gradient(141.58deg, #ff9a9a 3.63%, #f14c4c 91.45%);
+					mix-blend-mode: normal;
+					box-shadow: 1px 5px 30px rgba(215, 21, 21, 0.5);
+					border-radius: 10px;
+					img {
 						width: 35px;
 						height: 35px;
-						
-						}
+					}
 				}
-				
-				h3{
+
+				h3 {
 					// width: 143%;
 					height: 32px;
 					font-family: "Poppins";
 					font-style: normal;
 					font-size: 21px;
 					line-height: 32px;
-					margin: 25px 0 9px;			
+					margin: 25px 0 9px;
 				}
-				p{
+				p {
 					font-family: "Poppins";
 					font-style: normal;
 					font-weight: 400;
@@ -363,12 +360,12 @@ $color_red: #F44545;
 				}
 			}
 		}
-		.software-right{
+		.software-right {
 			width: 548px;
 			height: 405px;
 			margin-top: 105px;
-		
-			.title{
+
+			.title {
 				font-family: "Poppins";
 				font-weight: 600;
 				font-size: 45px;
@@ -376,68 +373,68 @@ $color_red: #F44545;
 				color: $color_black;
 				margin-bottom: 20px;
 			}
-			p{
+			p {
 				font-family: "Poppins";
 				font-weight: 400;
 				font-size: 18px;
 				line-height: 160%;
 				color: $color_black;
-				span{
+				span {
 					font-weight: 600;
 				}
 			}
-			.btn-soft{
+			.btn-soft {
 				margin-top: 29px;
-				
-				.btn1{
+
+				.btn1 {
 					font-family: "Poppins";
 					font-weight: 500;
 					font-size: 18px;
 					line-height: 160%;
-					color: #FFF;
+					color: #fff;
 					padding: 15px 40px;
-					background-color:  #282323;
+					background-color: #282323;
 					border: 1px solid #282323;
 					border-radius: 6px;
 					margin-right: 25px;
 					cursor: pointer;
 					transition: 0.5s ease-in;
-					&:hover{
+					&:hover {
 						background-color: white;
 						color: #282323;
 					}
 				}
-				.ask{
+				.ask {
 					font-family: "Poppins";
 					font-weight: 500;
 					font-size: 18px;
 					line-height: 160%;
-					color: #FF4D4D;
+					color: #ff4d4d;
 					transition: 0.5s ease-in;
-					&:hover{
+					&:hover {
 						color: $color_black;
 					}
 				}
 			}
 		}
 	}
-	.get-software{
+	.get-software {
 		background-color: rgba(142, 230, 201, 0.1);
 		margin-bottom: 117px;
-		.center-right{
+		.center-right {
 			display: flex;
-			.get-software-left{
+			.get-software-left {
 				width: 480px;
-				h4{
+				h4 {
 					@include font("Poppins", normal, 600, 45px, 68px, $color_black);
 					padding-top: 91px;
 					padding-bottom: 20px;
 				}
-				p{
+				p {
 					@include font("Poppins", normal, 400, 18px, 160%, $color_black);
 					opacity: 0.7;
 				}
-				button{
+				button {
 					@include font("Poppins", normal, 500, 20px, 160%, $color_white);
 					padding: 15px 33px;
 					margin-top: 30px;
@@ -446,15 +443,15 @@ $color_red: #F44545;
 					border: 1px solid $color_red;
 					border-radius: 6px;
 					transition: 0.5s ease-in-out;
-					&:hover{
+					&:hover {
 						background-color: $color_white;
 						color: $color_red;
 					}
 				}
 			}
-			.get-software-right{
+			.get-software-right {
 				position: relative;
-				img{
+				img {
 					position: absolute;
 					top: -113px;
 					left: -45px;
@@ -462,8 +459,6 @@ $color_red: #F44545;
 			}
 		}
 	}
-
-
 
 	.google-bg {
 		background-color: rgba(142, 230, 201, 0.1);
@@ -482,146 +477,150 @@ $color_red: #F44545;
 			height: 163px;
 		}
 	}
-	.cards {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		padding-bottom: 120px;
-
-		.card {
+	.section-cards{
+		background: url('../images/cards-t-orange.svg') 195px 426px no-repeat, url('../images/cards-t-orange.svg') 206px 430px no-repeat,  url('../images/cards-t-orange.svg') 199px 439px no-repeat, url('../images/cards-circl-orange.svg') 80px 268px no-repeat,  url('../images/cards-t-blue.svg') right 194px top 163px no-repeat, url('../images/cards-t-blue.svg') right 190px top 176px no-repeat, url('../images/cards-t-blue.svg') right 201px top 173px no-repeat,url('../images/cards-circl-blue.svg') right 98px top 31px no-repeat ;
+		.cards {
 			display: flex;
-			align-items: center;
-			flex-direction: column;
-
-			border: 1px solid rgba(0, 0, 0, 0.1);
-			border-radius: 15px;
-			height: 604px;
-
-			h4 {
-				font-family: Poppins;
-				font-weight: 600;
-				font-size: 20px;
-				line-height: 170%;
-				text-align: center;
-				color: $color_black;
-				opacity: 0.5;
-				padding: 35px 0 35px 0;
-			}
-			h5 {
-				font-family: "Poppins";
-				font-weight: 600;
-				font-size: 43px;
-				line-height: 100%;
-				color: $color_black;
-				padding-bottom: 29px;
-			}
-
-			.info-card {
-				width: 361px;
-				hr {
-					border: 1px solid #011212;
-					opacity: 0.1;
-					color: #011212;
-					margin: 0;
-				}
-				.info {
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-					padding: 22px 29px;
-					img {
-						padding-right: 8px;
-					}
-					.one-p {
-						font-family: "Poppins";
-						font-weight: 500;
-						font-size: 16px;
-						line-height: 160%;
-						color: $color_black;
-						opacity: 0.7;
-						margin-right: auto;
-						// text-decoration: line-through;
-					}
-					.line_through {
-						text-decoration: line-through;
-					}
-					.yes-no {
-						font-family: "Poppins";
-						font-weight: 500;
-						font-size: 16px;
-						line-height: 160%;
-						color: $color_black;
-						opacity: 0.7;
-					}
-				}
-			}
-			.buy-plan {
-				text-decoration: none;
-			}
-			.buy-plan {
+			flex-direction: row;
+			justify-content: space-between;
+			padding-bottom: 120px;
+			
+			.card {
 				display: flex;
-				justify-content: center;
 				align-items: center;
-				width: 239px;
-				min-height: 60px;
-				border: 1px solid #f44545;
-				border-radius: 5px;
-				transition: 0.5s ease-in;
-				margin: 42px 0 35px 0;
-				// padding: 13px 10px;
-				text-align: center;
+				flex-direction: column;
+				background: $color_white;
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				border-radius: 15px;
+				height: 604px;
+	
+				h4 {
+					font-family: Poppins;
+					font-weight: 600;
+					font-size: 20px;
+					line-height: 170%;
+					text-align: center;
+					color: $color_black;
+					opacity: 0.5;
+					padding: 35px 0 35px 0;
+				}
+				h5 {
+					font-family: "Poppins";
+					font-weight: 600;
+					font-size: 43px;
+					line-height: 100%;
+					color: $color_black;
+					padding-bottom: 29px;
+				}
+	
+				.info-card {
+					width: 361px;
+					hr {
+						border: 1px solid #011212;
+						opacity: 0.1;
+						color: #011212;
+						margin: 0;
+					}
+					.info {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						padding: 22px 29px;
+						img {
+							padding-right: 8px;
+						}
+						.one-p {
+							font-family: "Poppins";
+							font-weight: 500;
+							font-size: 16px;
+							line-height: 160%;
+							color: $color_black;
+							opacity: 0.7;
+							margin-right: auto;
+							// text-decoration: line-through;
+						}
+						.line_through {
+							text-decoration: line-through;
+						}
+						.yes-no {
+							font-family: "Poppins";
+							font-weight: 500;
+							font-size: 16px;
+							line-height: 160%;
+							color: $color_black;
+							opacity: 0.7;
+						}
+					}
+				}
+				.buy-plan {
+					text-decoration: none;
+				}
+				.buy-plan {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 239px;
+					min-height: 60px;
+					border: 1px solid #f44545;
+					border-radius: 5px;
+					transition: 0.5s ease-in;
+					margin: 42px 0 35px 0;
+					// padding: 13px 10px;
+					text-align: center;
+				}
+				.buy-plan:hover {
+					color: white;
+					background-color: #f44545;
+				}
+				.button-red {
+					background-color: #f55454;
+				}
+				.button-red:hover {
+					color: #f55454;
+					background-color: white;
+				}
 			}
-			.buy-plan:hover {
-				color: white;
-				background-color: #f44545;
+			// .card-one {
+			// 	.info-card {
+			// 		.info {
+			// 			.one-p {
+			// 				// text-decoration: none;
+			// 			}
+			// 		}
+			// 	}
+			// }
+			.card-two {
+				box-shadow: 0px 20px 100px rgba(2, 18, 6, 0.15);
 			}
-			.button-red {
-				background-color: #f55454;
-			}
-			.button-red:hover {
-				color: #f55454;
-				background-color: white;
-			}
+			// .card-three {
+			// }
 		}
-		// .card-one {
-		// 	.info-card {
-		// 		.info {
-		// 			.one-p {
-		// 				// text-decoration: none;
-		// 			}
-		// 		}
-		// 	}
-		// }
-		.card-two {
-			box-shadow: 0px 20px 100px rgba(2, 18, 6, 0.15);
-		}
-		// .card-three {
-		// }
 	}
-	.best{
+
+	.best {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		.best-pricing{
+		.best-pricing {
 			@include font("Poppins", normal, 600, 45px, 68px, $color_black);
 			margin-bottom: 20px;
 		}
-		p{
+		p {
 			@include font("Poppins", normal, 400, 18px, 170%, $color_black);
 			opacity: 0.7;
 			width: 754px;
 			margin-bottom: 37px;
 		}
-		.radio{
+		.radio {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			width: 267px;
 			margin-bottom: 17px;
-			h5{
+			h5 {
 				@include font("Poppins", normal, 400, 20px, 80%, $color_black);
-				color: #4E5951;
+				color: #4e5951;
 			}
 			/* The switch - the box around the slider */
 			.switch {
@@ -637,7 +636,7 @@ $color_red: #F44545;
 				display: flex;
 				justify-content: center;
 				align-self: center;
-				display:none;
+				display: none;
 			}
 			/* The slider */
 			.slider {
@@ -648,9 +647,9 @@ $color_red: #F44545;
 				left: 0;
 				right: 0;
 				bottom: 0;
-				background-color: #43DDAA;
-				-webkit-transition: .4s;
-				transition: .4s;
+				background-color: #43ddaa;
+				-webkit-transition: 0.4s;
+				transition: 0.4s;
 				border-radius: 6px;
 			}
 			.slider:before {
@@ -662,14 +661,14 @@ $color_red: #F44545;
 				bottom: 6px;
 				background-color: $color_white;
 				border-radius: 3px;
-				-webkit-transition: .4s;
-				transition: .4s;
+				-webkit-transition: 0.4s;
+				transition: 0.4s;
 			}
 			input:checked + .slider {
-				background-color: #43DDAA;
+				background-color: #43ddaa;
 			}
 			input:focus + .slider {
-				box-shadow: 0 0 1px #43DDAA;
+				box-shadow: 0 0 1px #43ddaa;
 			}
 			input:checked + .slider:before {
 				-webkit-transform: translateX(26px);
@@ -677,11 +676,11 @@ $color_red: #F44545;
 				transform: translateX(-26px);
 			}
 		}
-		.save-up{
+		.save-up {
 			margin-bottom: 27px;
 			@include font("Poppins", normal, 600, 18px, 80%, $color_black);
 			opacity: 0.7;
-			img{
+			img {
 				margin-left: 8px;
 			}
 		}
@@ -692,7 +691,7 @@ $color_red: #F44545;
 			flex-direction: column;
 			width: 1146px; /* Ширина внешнего контейнера */
 			margin-bottom: 89px;
-			.price{
+			.price {
 				position: relative;
 				display: flex;
 				justify-content: center;
@@ -704,7 +703,7 @@ $color_red: #F44545;
 				border-radius: 3px;
 				@include font("Poppins", normal, 500, 17px, 80%, $color_white);
 				margin-bottom: 23px;
-				span{
+				span {
 					position: absolute;
 					top: 35px;
 					width: 15px;
@@ -712,47 +711,47 @@ $color_red: #F44545;
 					background: no-repeat url("../images/slidercontainer-price-bg.svg");
 				}
 			}
-		 }
-		 
-		 /* Сам ползунок */
-		 .slider {
-			-webkit-appearance: none;  /* Переопределение стилей CSS по умолчанию */
+		}
+
+		/* Сам ползунок */
+		.slider {
+			-webkit-appearance: none; /* Переопределение стилей CSS по умолчанию */
 			appearance: none;
 			width: 100%; /* Полная ширина */
 			height: 10px; /* Заданная высота */
-			background: linear-gradient(154.24deg, #85FED6 4.45%, #4EDAAC 83.73%);
+			background: linear-gradient(154.24deg, #85fed6 4.45%, #4edaac 83.73%);
 			outline: none; /* Удалить контур */
 			opacity: 0.7; /* Установите прозрачность (для эффектов наведения мыши при наведении курсора) */
-			-webkit-transition: .2s; /* 0.2 секундный переход при наведении курсора */
-			transition: opacity .2s;
+			-webkit-transition: 0.2s; /* 0.2 секундный переход при наведении курсора */
+			transition: opacity 0.2s;
 			box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
 			background-blend-mode: luminosity;
 			border-radius: 10px;
-		 }
-		 
-		 /* Эффекты наведения курсора мыши */
-		 .slider:hover {
+		}
+
+		/* Эффекты наведения курсора мыши */
+		.slider:hover {
 			opacity: 1; /* Полностью отображается при наведении курсора мыши */
-		 }
-		 
-		 /*Ползунок обработчик (использовать -webkit- (Chrome, Opera, Safari, Edge) и -moz- (Firefox) чтобы переопределить внешний вид по умолчанию ) */
-		 .slider::-webkit-slider-thumb {
+		}
+
+		/*Ползунок обработчик (использовать -webkit- (Chrome, Opera, Safari, Edge) и -moz- (Firefox) чтобы переопределить внешний вид по умолчанию ) */
+		.slider::-webkit-slider-thumb {
 			-webkit-appearance: none; /* Переопределить внешний вид по умолчанию */
 			appearance: none;
 			width: 20px; /* Установите определенную ширину обработчика ползунка */
 			height: 20px; /* Высота обработчика ползунка */
-			background: linear-gradient(154.24deg, #85FED6 4.45%, #4EDAAC 83.73%);
+			background: linear-gradient(154.24deg, #85fed6 4.45%, #4edaac 83.73%);
 			background-blend-mode: luminosity;
 			border-radius: 10px;
-			border: 3px solid #FFFFFF;
+			border: 3px solid #ffffff;
 			box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
 			cursor: pointer; /* Курсор при наведении */
-		 }
+		}
 	}
 }
 @media screen and (max-width: 1500px) {
 	.wrapper {
-		.center-right{
+		.center-right {
 			width: 100%;
 			max-width: 1146px;
 			margin: 0 auto;
@@ -771,27 +770,24 @@ $color_red: #F44545;
 			}
 		}
 		.get-software {
-			.center-right{
+			.center-right {
 				.get-software-right img {
 					position: absolute;
 					top: -113px;
 					left: -143px;
 				}
-			} 
+			}
 		}
 	}
-	
 }
 
-
-@media screen and (max-width: 1450px){
-	.wrapper{
-
-		.software{
-			.software-left{
+@media screen and (max-width: 1450px) {
+	.wrapper {
+		.software {
+			.software-left {
 				margin-right: 5px;
 			}
-			.software-right{
+			.software-right {
 				margin-top: 0px;
 				width: 480px;
 			}
@@ -805,22 +801,21 @@ $color_red: #F44545;
 			max-width: 95%;
 			width: auto;
 		}
-		.center3{
+		.center3 {
 			max-width: 95%;
 			margin: 0 auto;
 		}
-		.center-right{
+		.center-right {
 			width: 100%;
 			max-width: 1146px;
 			margin: 0 auto;
 		}
-		.software{
+		.software {
 			display: flex;
 			justify-content: space-evenly;
 		}
 	}
 }
-
 
 @media screen and (max-width: 1200px) {
 	.wrapper {
@@ -834,25 +829,28 @@ $color_red: #F44545;
 				width: auto;
 			}
 		}
-		.cards {
-			flex-wrap: wrap;
-			justify-content: center;
-
-			.card-two {
-				margin: 0 15px 15px 15px;
-				// margin-bottom: 15px;
-				// .buy-plan {
-				// 	// flex-wrap: wrap;
-				// }
+		.section-cards{
+			.cards {
+				flex-wrap: wrap;
+				justify-content: center;
+				
+				.card-two {
+					margin: 0 15px 15px 15px;
+					// margin-bottom: 15px;
+					// .buy-plan {
+					// 	// flex-wrap: wrap;
+					// }
+				}
 			}
 		}
-		.get-software{
-			.center-right{
+		
+		.get-software {
+			.center-right {
 				width: 95%;
-				.get-software-right{
-					width:10%;
+				.get-software-right {
+					width: 10%;
 					height: auto;
-					img{
+					img {
 						top: 50px;
 						left: 0;
 						width: 500%;
@@ -860,65 +858,65 @@ $color_red: #F44545;
 				}
 			}
 		}
-		.best{
-			.slidecontainer{
+		.best {
+			.slidecontainer {
 				max-width: 95%;
 			}
 		}
 	}
 }
-@media screen and (max-width: 1150px){
-		.wrapper {
-			.software{
-				.software-left{
-					display: flex;
-					justify-content: center;
-					.icon{
-						margin-right: 0;
-					}
+@media screen and (max-width: 1150px) {
+	.wrapper {
+		.software {
+			.software-left {
+				display: flex;
+				justify-content: center;
+				.icon {
+					margin-right: 0;
 				}
 			}
 		}
 	}
-@media screen and (max-width: 1050px){
-	.wrapper{
-		.software{
+}
+@media screen and (max-width: 1050px) {
+	.wrapper {
+		.software {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			.software-left{
+			.software-left {
 				justify-content: center;
 				width: auto;
-				.icon{
+				.icon {
 					margin-right: 5px;
 				}
 			}
-			.software-right{
+			.software-right {
 				text-align: center;
 				width: auto;
 				height: auto;
 				margin-bottom: 50px;
 			}
 		}
-		.get-software{
-			.center-right{
+		.get-software {
+			.center-right {
 				flex-direction: column;
 				align-items: center;
-				.get-software-left{
+				.get-software-left {
 					width: auto;
 					text-align: center;
-					h4{
+					h4 {
 						padding-top: 40px;
 					}
-					button{
+					button {
 						margin-bottom: 40px;
 					}
 				}
-				.get-software-right{
+				.get-software-right {
 					display: flex;
-    				justify-content: center;
+					justify-content: center;
 					// width: 100%;
-					img{
+					img {
 						position: static;
 						width: 1000%;
 					}
@@ -927,7 +925,7 @@ $color_red: #F44545;
 		}
 	}
 }
-	
+
 @media screen and (max-width: 1002px) {
 	.wrapper {
 		.develop {
@@ -952,8 +950,8 @@ $color_red: #F44545;
 				}
 			}
 		}
-		.best{
-			p{
+		.best {
+			p {
 				max-width: 95%;
 			}
 		}
@@ -966,125 +964,121 @@ $color_red: #F44545;
 		}
 		.develop {
 			.develop-left {
-				form{
-					input{
+				form {
+					input {
 						width: 95%;
 					}
-					button{
+					button {
 						position: static;
 						margin-left: 0;
 						width: 100%;
-
 					}
 				}
 			}
-
 		}
-		.cards {
-			.card {
-				.info-card {
-					// width: auto;
-					.info {
-						width: 95%;
-						padding: 15px 5px;
+		.section-cards{
+			.cards {
+				.card {
+					.info-card {
+						// width: auto;
+						.info {
+							width: 95%;
+							padding: 15px 5px;
+						}
 					}
 				}
-			}
-			.card-two {
-				margin: 15px 0;
+				.card-two {
+					margin: 15px 0;
+				}
 			}
 		}
+		
 	}
 }
-@media screen and (max-width: 600px){
-	.center{
+@media screen and (max-width: 600px) {
+	.center {
 		max-width: 95%;
 	}
-	.wrapper{
-		.software{
-			.software-left{
+	.wrapper {
+		.software {
+			.software-left {
 				margin-left: 0;
-				.icon{
+				.icon {
 					text-align: center;
-					.icon-text{
+					.icon-text {
 						width: auto;
 					}
-					.img{
+					.img {
 						margin: 0 auto;
 					}
 				}
 			}
-			.software-right{
+			.software-right {
 				margin-bottom: 20px;
-				.btn-soft{
+				.btn-soft {
 					display: flex;
 					flex-direction: column;
-					.btn1{
+					.btn1 {
 						margin-bottom: 20px;
 						margin-right: 0px;
 					}
 				}
 			}
-		
 		}
-		.get-software{
-			.center-right{
-				.get-software-left{
-					button{
-					width: 100%;
+		.get-software {
+			.center-right {
+				.get-software-left {
+					button {
+						width: 100%;
 					}
 				}
 			}
 		}
-		section{
-			.cards{
+		.section-cards {
+			.cards {
 				display: flex;
 				flex-direction: column;
 				padding-bottom: 25px;
-				.card{
+				
+				.card {
 					height: auto;
 					// .info-card{
 					// 	// width: auto;
 					// }
-					.buy-plan{
+					.buy-plan {
 						width: 95%;
-
 					}
 				}
 			}
 		}
 		.develop {
 			.develop-left {
-				form{
-					input{
+				form {
+					input {
 						width: 90%;
 					}
-					button{
+					button {
 						position: static;
 						margin-left: 0;
 						width: 100%;
-
 					}
 				}
 			}
-
 		}
 	}
 }
-@media screen and (max-width: 400px){
-	.wrapper{
-		section{
-			.cards{
-				.card{
-					.info-card{
+@media screen and (max-width: 400px) {
+	.wrapper {
+		.section-cards {
+			.cards {
+				.card {
+					.info-card {
 						width: 100%;
-
 					}
 				}
 			}
 		}
 	}
 }
-
 
 @import "_footer";
