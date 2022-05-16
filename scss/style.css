@@ -304,6 +304,12 @@ body {
   margin: 0px 122px 0px 228px;
 }
 
+.wrapper .center-descover {
+  width: 100%;
+  max-width: 1203px;
+  margin: 0 170px 208px 227px;
+}
+
 .wrapper .develop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -610,6 +616,72 @@ body {
 
 .wrapper .software .software-right .btn-soft .ask:hover {
   color: #021206;
+}
+
+.wrapper .discover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .discover .discover-cont-left {
+  width: 524px;
+}
+
+.wrapper .discover .discover-cont-left .cont-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 68px;
+  color: #021206;
+  margin-bottom: 20px;
+}
+
+.wrapper .discover .discover-cont-left .descr {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #021206;
+  padding-bottom: 20px;
+  width: 448px;
+}
+
+.wrapper .discover .discover-cont-left .desc-ul > li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #021206;
+  list-style-image: url("../images/discover-ul-img.svg");
+  padding-left: 10px;
+  margin-left: 30px;
+}
+
+.wrapper .discover .discover-cont-right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+}
+
+.wrapper .discover .discover-cont-right .one {
+  width: 27px;
+}
+
+.wrapper .discover .discover-cont-right .two {
+  width: 462px;
+  height: 27px;
+}
+
+.wrapper .discover .discover-cont-right .three {
+  width: 353px;
+  height: 278px;
 }
 
 .wrapper .get-software {
