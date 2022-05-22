@@ -550,7 +550,6 @@ $color_grey: #D0D1D2;
 				justify-content: center;
 				width: 133px;
 				height: 158px;
-				
 				box-shadow: 14px 40px 116px rgba(0, 0, 0, 0.15);
 				border-radius: 15px;
 				background: url('../images/five-circle-red.png') left 20px top 21px  no-repeat, url('../images/five-circle-orange.png') right 21px top 32px  no-repeat, url('../images/five-circle-grey.png') bottom 44px right 43px  no-repeat, #FFFFFF;
@@ -593,9 +592,96 @@ $color_grey: #D0D1D2;
 			.six{
 				grid-column: 5/8;
 				grid-row: 4/6;
+				width: 257px;
+				height: 236px;
+				padding: 25px 22px 25px 25px;
+				background: $color_white;
+				box-shadow: 14px 40px 116px rgba(0, 0, 0, 0.15);
+				border-radius: 12.2043px;
+				position: absolute;
+				top: -136px;
+				right: -38px;
+				.current-plan{
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 4px;
+					.title{
+						@include font('Poppins', normal, 600, 14px, 21px, $color_black);
+						letter-spacing: -0.02em;
+						opacity: 0.8;
+					}
+					>img{
+						width: 14px;
+						height: 14px;
+					}
+				}
+				.information{
+					@include font('Poppins', normal, 400, 8px, 12px, #92959E);
+					margin-bottom: 14px;
+				}
+				.team{
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 17px;
+					.img{
+						width: 14px;
+						height: 14px;
+						padding: 12px;
+						background: url('../images/discover-user-bg.png') no-repeat;
+						// opacity: 0.1;
+						border-radius: 9px;
+						margin-right: 7px;
+					}
+					.team-plan{
+						align-self: center;
+						@include font('Poppins', normal, 400, 8px, 12px, $color_black);
+						letter-spacing: -0.02em;
+						opacity: 0.7;
+						margin-right: auto;
+						.team-price{
+							@include font('Poppins', normal, 600, 10px, 15px, $color_black);
+							letter-spacing: -0.02em;
+							opacity: 0.8;
+						}
+					}
+				}
+				.projects{
+					
+					.info-current{
+						display: flex;
+					justify-content: space-between;
+					@include font('Poppins', normal, 500, 8px, 12px, $color_black);
+					opacity: 0.8;
+					letter-spacing: -0.02em;
+					margin-bottom: 5px;
+						>p{
+							font-size: 7px;
+							line-height: 11px;
+						}
+					}
+				}
+				.current-slidercontainer{
+					// width: 100%;
+					
+					.range{
+						width: 100%;
+						height: 4px;
+						color:  #F56060;
+						margin: 0 0 15px 0;
+						cursor: pointer;
+						border-radius: 9px;
+						// appearance: none;
+						background: #F56060;;
+						// outline: none; 
+						opacity: 0.7; 
+						transition: opacity .2s;
+						:hover{
+							opacity: 1;
+						}
+					}
+				}
 			}
 		}
-
 	}
 
 

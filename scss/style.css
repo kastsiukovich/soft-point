@@ -930,6 +930,137 @@ body {
   -ms-grid-row: 4;
   -ms-grid-row-span: 2;
   grid-row: 4/6;
+  width: 257px;
+  height: 236px;
+  padding: 25px 22px 25px 25px;
+  background: #ffffff;
+  -webkit-box-shadow: 14px 40px 116px rgba(0, 0, 0, 0.15);
+          box-shadow: 14px 40px 116px rgba(0, 0, 0, 0.15);
+  border-radius: 12.2043px;
+  position: absolute;
+  top: -136px;
+  right: -38px;
+}
+
+.wrapper .discover .discover-cont-right .six .current-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.wrapper .discover .discover-cont-right .six .current-plan .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #021206;
+  letter-spacing: -0.02em;
+  opacity: 0.8;
+}
+
+.wrapper .discover .discover-cont-right .six .current-plan > img {
+  width: 14px;
+  height: 14px;
+}
+
+.wrapper .discover .discover-cont-right .six .information {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
+  color: #92959E;
+  margin-bottom: 14px;
+}
+
+.wrapper .discover .discover-cont-right .six .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.wrapper .discover .discover-cont-right .six .team .img {
+  width: 14px;
+  height: 14px;
+  padding: 12px;
+  background: url("../images/discover-user-bg.png") no-repeat;
+  border-radius: 9px;
+  margin-right: 7px;
+}
+
+.wrapper .discover .discover-cont-right .six .team .team-plan {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
+  color: #021206;
+  letter-spacing: -0.02em;
+  opacity: 0.7;
+  margin-right: auto;
+}
+
+.wrapper .discover .discover-cont-right .six .team .team-plan .team-price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+  color: #021206;
+  letter-spacing: -0.02em;
+  opacity: 0.8;
+}
+
+.wrapper .discover .discover-cont-right .six .projects .info-current {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 12px;
+  color: #021206;
+  opacity: 0.8;
+  letter-spacing: -0.02em;
+  margin-bottom: 5px;
+}
+
+.wrapper .discover .discover-cont-right .six .projects .info-current > p {
+  font-size: 7px;
+  line-height: 11px;
+}
+
+.wrapper .discover .discover-cont-right .six .current-slidercontainer .range {
+  width: 100%;
+  height: 4px;
+  color: #F56060;
+  margin: 0 0 15px 0;
+  cursor: pointer;
+  border-radius: 9px;
+  background: #F56060;
+  opacity: 0.7;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.wrapper .discover .discover-cont-right .six .current-slidercontainer .range :hover {
+  opacity: 1;
 }
 
 .wrapper .get-software {
