@@ -667,8 +667,8 @@ body {
 .wrapper .discover .discover-cont-right {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 28px (1fr)[4];
-      grid-template-rows: 28px repeat(4, 1fr);
+  -ms-grid-rows: 28px (auto)[4];
+      grid-template-rows: 28px repeat(4, auto);
   -ms-grid-columns: (1fr)[7];
       grid-template-columns: repeat(7, 1fr);
   width: 597px;
@@ -735,6 +735,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 7px 0 7px 0;
+  margin-bottom: 1px;
 }
 
 .wrapper .discover .discover-cont-right .two .naw-left {
@@ -824,6 +825,82 @@ body {
   grid-row: 2;
   -ms-grid-column: 6;
   grid-column: 6;
+}
+
+.wrapper .discover .discover-cont-right .four {
+  padding: 12px auto auto 12px;
+  background: #E5E5E5;
+}
+
+.wrapper .discover .discover-cont-right .four .yes {
+  margin: 12px auto 0 12px;
+}
+
+.wrapper .discover .discover-cont-right .four .four-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 12px 12px;
+}
+
+.wrapper .discover .discover-cont-right .four .four-two > img {
+  margin-right: 3px;
+}
+
+.wrapper .discover .discover-cont-right .four .four-two > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5px;
+  line-height: 7px;
+  color: rgba(66, 47, 138, 0.87);
+}
+
+.wrapper .discover .discover-cont-right .four .four-content {
+  background: #ffffff;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 3px 12px rgba(50, 50, 71, 0.06);
+          box-shadow: 0px 3px 12px rgba(50, 50, 71, 0.06);
+  width: 85px;
+  height: 93px;
+  margin-left: 12px;
+}
+
+.wrapper .discover .discover-cont-right .four .four-content br {
+  width: 54px;
+  height: 0px;
+  border: 1px solid #ECE9F1;
+  -webkit-transform: rotate(0.38deg);
+          transform: rotate(0.38deg);
+}
+
+.wrapper .discover .discover-cont-right .four .four-content .f-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85px;
+  height: 16px;
+  padding: 4px;
+}
+
+.wrapper .discover .discover-cont-right .four .four-content .f-c > img {
+  margin-right: 11px;
+  width: 16px;
+  height: 16px;
+}
+
+.wrapper .discover .discover-cont-right .four .four-content .f-c .p > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5px;
+  line-height: 7px;
+  color: #D0D1D2;
+}
+
+.wrapper .discover .discover-cont-right .four .four-content .f-c .p .black {
+  font-weight: 600;
+  color: #11263C;
 }
 
 .wrapper .discover .discover-cont-right .five {

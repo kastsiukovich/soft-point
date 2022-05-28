@@ -439,25 +439,19 @@ $color_grey: #D0D1D2;
 				width: 448px;
 			}
 			.desc-ul{
-				// display: flex;
-				// justify-content: space-between;
-				
 				>li{
 					@include font('Poppins', normal, 400, 18px, 160%, $color_black);
 					list-style-image: url('../images/discover-ul-img.svg');
 					padding-left: 10px;
 					margin-left: 30px;
-					
 				}
-				
 			}
 		}
 		.discover-cont-right{
 			display: grid;
-			grid-template-rows: 28px repeat(4, 1fr);
+			grid-template-rows: 28px repeat(4, auto);
 			grid-template-columns: repeat(7, 1fr);
 			width: 597px;
-			// background: #7459D9;
 			box-shadow: 3px 6px 44px rgba(204, 206, 204, 0.5);
 			border-radius: 10px;
 			position: relative;
@@ -492,6 +486,7 @@ $color_grey: #D0D1D2;
 				justify-content: space-between;
 				align-items: center;
 				margin: 7px 0 7px 0;
+				margin-bottom: 1px;
 				.naw-left{
 					display: flex;
 					justify-content: space-between;
@@ -536,10 +531,93 @@ $color_grey: #D0D1D2;
 				grid-column: 3/6;
 				width: 353px;
 				height: 278px;
+				.three{
+
+				}
+				// .three-one{
+				// 	.moon{
+
+				// 	}
+				// 	.plus{
+
+				// 	}
+				// }
+				// .three-two{
+				// 	.three-two-right{
+				// 		.line{
+
+				// 		}
+				// 		.center{
+				// 			p{
+
+				// 			}
+				// 			.calendar{
+
+				// 			}
+				// 		}
+
+				// 	}
+				// }
+
 			}
 			.aside-right{
 				grid-row: 2;
 				grid-column: 6;
+			}
+			.four{
+				padding: 12px auto auto 12px;
+				background: #E5E5E5;
+				.yes{
+					margin:12px auto 0 12px;
+				}
+				.four-two{
+					display: flex;
+					margin: 0 0 12px 12px;
+					>img{
+						margin-right: 3px;
+					}
+					>p{
+						@include font('Poppins', normal, 400, 5px, 7px, rgba(66, 47, 138, 0.87))
+					}
+				}
+				.four-content{
+					background: $color_white;
+						border-radius: 7px;
+						box-shadow: 0px 3px 12px rgba(50, 50, 71, 0.06);
+					width: 85px;
+					height: 93px;
+					margin-left: 12px;
+					br{
+						width: 54px;
+						height: 0px;
+						border: 1px solid #ECE9F1;
+						transform: rotate(0.38deg);
+					}
+					.f-c{
+						display: flex;
+						
+						width: 85px;
+						height: 16px;
+						padding: 4px;
+						>img{
+							margin-right: 11px;
+							width: 16px;
+							height: 16px;
+						}
+						.p{
+						
+							>p{
+								@include font('Poppins', normal, 400, 5px, 7px, #D0D1D2);
+							}
+							.black{
+								font-weight: 600;
+								color: #11263C;
+							}
+						}
+						
+					}
+				}
+
 			}
 			.five{
 				grid-column: 1/4;
